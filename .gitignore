@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-
+/.idea
 # testing
 /coverage
 
@@ -19,3 +19,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.idea/ReactJS-BookWorm.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
