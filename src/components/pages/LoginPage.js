@@ -5,9 +5,8 @@ import { login } from '../../redux/actions/auth';
 import LoginForm from '../forms/LoginForm';
 
 class LoginPage extends Component {
-  submit = data => {
+  submit = data =>
     this.props.login(data).then(() => this.props.history.push('/'));
-  };
   render() {
     return (
       <div>
