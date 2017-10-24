@@ -6,7 +6,7 @@ import LoginForm from '../forms/LoginForm';
 
 class LoginPage extends Component {
   submit = data =>
-    this.props.login(data).then(() => this.props.history.push('/'));
+    this.props.login(data).then(() => this.props.history.push('/dashboard'));
   render() {
     return (
       <div>
@@ -19,6 +19,6 @@ LoginPage.propTypes = {
   login: PropTypes.func.isRequired,
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,
-  }),
+  }).isRequired,
 };
 export default connect(null, { login })(LoginPage);
